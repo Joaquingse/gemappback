@@ -20,8 +20,9 @@ const classSchema = new mongoose.Schema({
   },
   comments: {
     type: String,
+    default: "",
   },
 });
 
-const classModel = mongoose.model("eclass", classSchema);
+const classModel = mongoose.model("class", classSchema);
 module.exports = classModel;

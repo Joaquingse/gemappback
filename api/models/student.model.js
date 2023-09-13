@@ -41,8 +41,7 @@ const studentSchema = new mongoose.Schema({
   classes: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "eclass",
-      default: "",
+      ref: "class",
     },
   ],
 });

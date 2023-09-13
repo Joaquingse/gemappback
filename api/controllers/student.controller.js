@@ -8,7 +8,7 @@ const getStudents = (req, res) => {
 
 const getStud = (req, res) => {
   Students.findById(req.params.id)
-    .populate("eclass")
+    .populate("classes")
     .then((stud) => res.json(stud))
     .catch((err) => res.json(err));
 };
